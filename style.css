@@ -159,6 +159,12 @@ footer p {
     
   }
 
+  body{
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+  }
+
   .logo {
     margin-left: 3%;
   }
@@ -205,11 +211,11 @@ width:fit-content;
   align-items: center;
   }
 
-  .item{
+  /*.item{
     display: flex;
     flex-direction: row;
     flex:1;
-  }
+  }*/
   
   .item-double{
     display: flex;
