@@ -2,6 +2,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  width:fit content;
 }
 
 h2 {
@@ -125,7 +126,7 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 160px;
 }
 
 form button {
