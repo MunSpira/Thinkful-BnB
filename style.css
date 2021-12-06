@@ -28,8 +28,8 @@ section {
 section.alternate-background {
   background-color: #00a699;
   color: #fff;
-
-
+  
+  
 }
 
 main img {
@@ -57,7 +57,7 @@ main img {
 
 header {
   background-color: #ff385c;
-
+ 
 }
 
 header nav {
@@ -68,7 +68,7 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: center;
-
+  
 }
 
 header nav ul li a {
@@ -119,15 +119,22 @@ form {
 form label {
   font-weight: bold;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  margin-left: 5%;
 }
 
 form select,
 form input {
   margin-bottom: 20px;
   width: 160px;
+  
 }
+
+.input{
+  display: flex;
+  justify-content: flex-end;
+}
+
 
 form button {
   background-color: #ff385c;
@@ -157,7 +164,7 @@ footer p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    
   }
 
   body{
@@ -174,7 +181,7 @@ footer p {
     display: flex;
     flex-direction: column;
     margin-right: 2%;
-
+    
   }
   header nav ul{
 width:fit-content;
@@ -185,29 +192,37 @@ width:fit-content;
     padding: 10px;
     margin-right: 0%;
     margin-left: 0%;
-
+    
   }
   form {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
+    
   }
   form label {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-top: 20%;
+    margin-left: 0px;
   }
+
+  form select,
+form input {
+  margin-bottom: 20px;
+  width: 160px;
+}
 
   form button {
     width: 100%;
     padding: 15px;
   }
 
-
+  
   .about{
   display: flex;
-
+  
 
   align-items: center;
   }
@@ -217,10 +232,10 @@ width:fit-content;
     flex-direction: row;
     flex:1;
   }*/
-
+  
   .item-double{
     display: flex;
-
+    
   }
 
 .ideas{
@@ -253,5 +268,5 @@ width:fit-content;
 
 
 
-
+  
 }
