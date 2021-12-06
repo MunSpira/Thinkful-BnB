@@ -120,19 +120,22 @@ form label {
   font-weight: bold;
   display: flex;
   justify-content: flex-start;
-  margin-left: 5%;
+ margin-left:5%
+
 }
 
 form select,
 form input {
   margin-bottom: 20px;
   width: 160px;
-  
+  margin-right: 5px;
 }
 
-.input{
+
+
+form div{
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 
@@ -189,7 +192,10 @@ width:fit-content;
 
   form {
     border: 2px solid #ff385c;
-    padding: 10px;
+    padding-right: 20px;
+    padding-left:20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     margin-right: 0%;
     margin-left: 0%;
     
@@ -197,26 +203,34 @@ width:fit-content;
   form {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    
     
   }
   form label {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+flex-direction: column;
     margin-top: 20%;
     margin-left: 0px;
+    
   }
 
   form select,
 form input {
   margin-bottom: 20px;
   width: 160px;
+  padding: 0px;
+}
+
+form div {
+display:block;
+justify-content: column;
 }
 
   form button {
     width: 100%;
-    padding: 15px;
+    padding-right: 40px;
+    padding-left:40px;
   }
 
   
