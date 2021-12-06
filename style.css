@@ -1,186 +1,257 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Vacation Rentals & Unique Homes</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pangolin&family=Lato&display=swap"
-      rel="stylesheet"
-    />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
+/* -------  General Styles ------- */
 
-  <body>
-    <header>
-      <div class="logo">Thinkfulbnb</div>
-      <nav>
-        <ul id="menu">
-          <li><a href="#stay">Stay</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#ideas">Ideas</a></li>
-          <li><a href="#host">Host</a></li>
-        </ul>
-      </nav>
-    </header>
+body {
+  font-family: "Lato", sans-serif;
+  width:fit-content;
+}
 
-    <main>
-      <!-- Stay -->
-      <section id="stay">
-        <h2>Find the perfect vacation rental</h2>
-        <form action="baseball-stats.js" method="get">
-          <div>
-            <label for="name"> Location </label>
-            <input
-              class="input"
-              id="name"
-              type="text"
-              name="name"
-              placeholder="Search destination"
-            />
-          </div>
-          <div>
-            <label> Arrive </label>
-            <input class="input" type="date" name="arrive" />
-          </div>
-          <div>
-            <label> Depart </label>
-            <input class="input" type="date" name="depart" />
-          </div>
-          <div>
-            <label for="homes"> Type </label>
-            <select class="input" name="homes" size="1" id="homes">
-              <option value="apartment">Apartment</option>
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+}
 
-              <option value="barn">Barn</option>
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
 
-              <option value="castle">Castle</option>
+p {
+  line-height: 1.5em;
+}
 
-              <option value="houseboat">Houseboat</option>
-              <option value="tiny house">Tiny House</option>
-              <option value="yacht">Yacht</option>
-              <option value="yurt">Yurt</option>
-            </select>
-          </div>
+section {
+  padding: 20px;
+}
 
-          <p><button>Search</button></p>
-        </form>
-      </section>
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
 
-      <!-- About -->
-      <section id="about" class="alternate-background">
-        <h2>About</h2>
-        <div class="about">
-          <div class="item">
-            <img
-              src="images/vacation-rental-pool.png"
-              alt="Thinkfulbnb - Vacation rental pool"
-            />
-          </div>
-          <div class="item">
-            <img
-              src="images/vacation-rental-inside-stone.png"
-              alt="Thinkfulbnb - Vacation rental inside stone"
-            />
-          </div>
-          <div class="item-double">
-            <p>
-              Fusce porta odio nunc, eget pretium massa rutrum sit amet. Etiam
-              fringilla aliquam dapibus. Maecenas quis nisi sed turpis aliquam
-              porttitor eget ut quam. Sed vel scelerisque ex. Duis in pharetra
-              neque, at tempus lorem. Aenean mi magna, posuere at quam sed,
-              euismod gravida neque.
-            </p>
-          </div>
-        </div>
-      </section>
 
-      <!-- Ideas -->
-      <section id="ideas">
-        <h2>Ideas</h2>
-        <div class="ideas">
-          <div class="idea">
-            <h3>Forest retreats</h3>
-            <img
-              src="images/forest-retreat.png"
-              alt="Thinkfulbnb - Forest retreat"
-            />
-          </div>
-          <div class="idea">
-            <h3>Beaches</h3>
-            <img
-              src="images/beach-house.png"
-              alt="Thinkfulbnb - Beach house"
-              class="idea"
-            />
-          </div>
-          <div class="idea">
-            <h3>Rustic cabins</h3>
-            <img
-              src="images/cabin.png"
-              alt="Thinkfulbnb - Cabin"
-              class="idea"
-            />
-          </div>
-          <div class="idea">
-            <h3>Pet-friendly</h3>
-            <img
-              src="images/pet-friendly.png"
-              alt="Thinkfulbnb - Pet-friendly"
-              class="idea"
-            />
-          </div>
-        </div>
-      </section>
+}
 
-      <!-- Host -->
-      <section id="host" class="alternate-background">
-        <h2>Want to Become a Thinkfulbnb Host?</h2>
-        <div class="host">
-          <div class="item">
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Phasellus molestie in est id efficitur. Sed hendrerit ut turpis
-                quis dapibus. Nam sit amet iaculis lectus. Aliquam erat
-                volutpat. Praesent rhoncus pellentesque eros in aliquet. Sed
-                accumsan elit lacus, id ultrices libero rutrum vitae.
-              </p>
+main img {
+  width: 100%;
+  margin-top: 5%;
+}
 
-              <ul>
-                <li>Mauris in pellentesque ligula.</li>
-                <li>
-                  Sed accumsan elit lacus, id ultrices libero rutrum vitae.
-                </li>
-                <li>Nunc vitae ex eget neque pellentesque porttitor.</li>
-                <li>
-                  Cras mollis lorem sagittis sapien imperdiet blandit. Vivamus.
-                </li>
-                <li>
-                  Donec vehicula ipsum nisi, eu consectetur leo feugiat et.
-                  Fusce eget hendrerit mauris.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="item">
-            <img
-              src="images/become-a-host.png"
-              alt="Thinkfulbnb - Become a host"
-            />
-          </div>
-        </div>
-      </section>
-    </main>
+/* ---  Groups & Items --- */
 
-    <footer>
-      <p>© Thinkful</p>
-    </footer>
-  </body>
-</html>
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+  justify-content: center;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0px;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+/* -------  Search Form ------- */
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+  margin-right: 0%;
+  margin-left: 0%;
+}
+
+form label {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 160px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -------  Media Query ------- */
+
+@media all and (min-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+  }
+
+  .logo {
+    margin-left: 3%;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2%;
+
+  }
+  header nav ul{
+width:fit-content;
+  }
+
+  form {
+    border: 2px solid #ff385c;
+    padding: 10px;
+    margin-right: 0%;
+    margin-left: 0%;
+
+  }
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+  }
+  form label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  form button {
+    width: 100%;
+    padding: 15px;
+  }
+
+
+  .about{
+  display: flex;
+
+
+  align-items: center;
+  }
+
+  /*.item{
+    display: flex;
+    flex-direction: row;
+    flex:1;
+  }*/
+
+  .item-double{
+    display: flex;
+
+  }
+
+.ideas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.idea{
+  flex:0 48%;
+}
+
+.host{
+  display: flex;
+  align-items: center;
+  flex:1;
+}
+
+
+.host-para{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.ideas h3{
+  margin-bottom: 0%;
+}
+
+
+
+
+
+}
